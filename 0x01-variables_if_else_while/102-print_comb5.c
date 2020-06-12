@@ -1,25 +1,37 @@
 #include <stdio.h>
 
 /**
- * main - use for
- * Description: use putchar to numbers
- * Return: 0
+ * main - Entry a number to the variable n and print character.
+ *
+ * Description: Prints the alphabet in lowercase.
+ *
+ * Return: Always 0 (Success)
  */
 
-int main(void)
+int main (void)
 {
-	int a, b;
+int a, b;
 
-	for (a = '0'; a <= '9' ; a++)
-	for (b = '0'; b <= '9' ; b++)
+	for (a = 48, b = 49; a < 58; a++)
 	{
-		putchar(a);
-		putchar(b);
-		if (a != '9' || b != '9')
+		while (b < 58)
 		{
-			putchar(',');
-			putchar(' ');
+			if (a != b)
+			{
+				if (b > a)
+				{
+					putchar(a);
+					putchar(b);
+					if (a < 56)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
+			b++;
 		}
+		b = 49;
 	}
 	putchar('\n');
 	return (0);
