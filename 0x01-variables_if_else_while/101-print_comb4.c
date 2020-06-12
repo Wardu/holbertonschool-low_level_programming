@@ -12,27 +12,27 @@ int main(void)
 {
 	int c, d, e;
 
-	for (e = '0' ; d <= '9' ; e++)
+	for (e = '0' ; e <= '9' ; e++)
 	{
 		for (d = '1' ; d <= '9' ; d++)
 		{
 			for (c = '2' ; c <= '9' ; c++)
 			{
-				if (e == '0' || e == '1' || e == '2')
+				if ( e == '7' && d == '8' && c == '9')
 				{
-					if (d == '0' || d == '1' || d == '2')
-					{
-						if (c == '0' || c == '1' || c == '2')
-						{
-						break;
-						}
-					}
+				break;
 				}
+				else if (e < d)
+				{
+					if (d < c)
+					{	
 				putchar(e);
 				putchar(d);
 				putchar(c);
 				putchar(',');
 				putchar(' ');
+					}
+				}
 			}
 		}
 	}
