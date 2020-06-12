@@ -16,7 +16,6 @@ int main(void)
 	{
 		if (c == 101 || c == 113)
 		{
-			break;
 		}
 		else
 		{
