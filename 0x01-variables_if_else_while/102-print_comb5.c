@@ -8,31 +8,36 @@
  * Return: Always 0 (Success)
  */
 
-int main (void)
+int main(void)
 {
-int a, b;
+int d = 0, c = 0, b = 0, a = 1;
 
-	for (a = 48, b = 49; a < 58; a++)
-	{
-		while (b < 58)
-		{
-			if (a != b)
-			{
-				if (b > a)
-				{
-					putchar(a);
-					putchar(b);
-					if (a < 56)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-			}
-			b++;
-		}
-		b = 49;
-	}
-	putchar('\n');
-	return (0);
+for (d = '0' ; d <= '9' ; d++)
+{
+for (c = '0' ; c <= '8' ; c++)
+{
+for (b = '0' ; b <= '9' ; b++)
+{
+for (a = '1' ; a <= '9' ; a++)
+{
+putchar(d);
+putchar(c);
+putchar(' ');
+putchar(b);
+putchar(a);
+if ((d == '9' && c == '8') && (b == '9' && a == '9'))
+{
+break;
+}
+else
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+}
+}
+putchar('\n');
+return (0);
 }
