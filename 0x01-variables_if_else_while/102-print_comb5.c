@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdio.h>
 
 /**
  * main - Entry a number to the variable n and print character.
@@ -11,7 +10,7 @@
 
 int main(void)
 {
-int d = 0, c = 0, b = 0, a = 0;
+int d, c, b, a;
 
 for (d = '0' ; d <= '9' ; d++)
 {
