@@ -10,32 +10,32 @@
 
 int main(void)
 {
-	int c, d, e;
+int d = 0, c = 1, b = 2;
 
-	for (e = '0' ; e <= '9' ; e++)
-	{
-		for (d = '1' ; d <= '9' ; d++)
-		{
-			for (c = '2' ; c <= '9' ; c++)
-			{
-				if ( e == '7' && d == '8' && c == '9')
-				{
-				break;
-				}
-				else if (e < d)
-				{
-					if (d < c)
-					{	
-				putchar(e);
-				putchar(d);
-				putchar(c);
-				putchar(',');
-				putchar(' ');
-					}
-				}
-			}
-		}
-	}
-	putchar('\n');
+for (d = '0' ; d <= '9' ; d++)
+{
+for (c = '0' ; c <= '9' ; c++)
+{
+for (b = '0' ; b <= '9' ; b++)
+{
+if (d < c && c < b)
+{
+putchar(d);
+putchar(c);
+putchar(b);
+if (d == '7' && c == '8' && b == '9')
+{
+break;
+}
+else
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+}
+}
+putchar('\n');
 return (0);
 }
