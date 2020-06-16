@@ -20,7 +20,7 @@ return (c);
 }
 else if (c < 0)
 {
-c *= -1;
+c = fabs(c);
 c = c % 10;
 _putchar('0' + c);
 return (c);
