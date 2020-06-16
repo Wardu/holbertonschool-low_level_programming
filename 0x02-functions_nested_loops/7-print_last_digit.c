@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <math.h>
 
 /**
  * print_last_digit - check the last digit.
@@ -12,22 +11,17 @@
 int print_last_digit(int c)
 {
 
-if (c > 0)
+
+if (c < 0)
 {
+c = -c;
 c = c % 10;
 _putchar('0' + c);
-return (c);
-}
-else if (c < 0)
-{
-c = fabs(c);
-c = c % 10;
-_putchar('0' + c);
-return (c);
 }
 else
 {
-_putchar('0');
-return (c);
+c = c % 10;
+_putchar('0' + c);
 }
+return (c);
 }
