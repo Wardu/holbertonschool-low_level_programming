@@ -1,13 +1,20 @@
+#include <unistd.h>
 #include "holberton.h"
 
 /**
- * main - use funcion print_alphabet
- * Description: output with return
- * Return: On success 0.
+ * print_alphabet - prints the alphabet, in lowercase, followed by a new line.
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 
-int main(void)
+void print_alphabet(void)
 {
-print_alphabet();
-return (0);
+int i = 'a';
+
+while (i <= 'z')
+{
+_putchar(i);
+i++;
+}
+_putchar('\n');
 }
