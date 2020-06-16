@@ -1,46 +1,26 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
  * _abs - computes the absolute value of an integer.
- * @r: The character to check
+ * @c: The character to check
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-int _abs(int r)
+int _abs(int c)
 {
-if (r > 0)
+if (c > 0)
 {
-return (r);
+return (c);
 }
-else if (r == 0)
+else if (c == 0)
 {
-return (r);
+return (c);
 }
 else
 {
-r *= -1;
-return (r);
+c *= -1;
+return (c);
 }
-}
-
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-int r;
-
-r = _abs(-1);
-printf("%d\n", r);
-r = _abs(0);
-printf("%d\n", r);
-r = _abs(1);
-printf("%d\n", r);
-r = _abs(-98);
-printf("%d\n", r);
-return (0);
 }
