@@ -15,16 +15,18 @@ if (c > 0)
 {
 c = c % 10;
 _putchar('0' + c);
+return (c);
 }
-if (c == 0)
+else if (c == 0)
 {
 _putchar('0' + c);
+return (c);
 }
 else
 {
 c *= -1;
 c = c % 10;
 _putchar('0' + c);
-}
 return (c);
+}
 }
