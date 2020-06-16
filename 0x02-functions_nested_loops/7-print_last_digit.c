@@ -16,7 +16,7 @@ if (c > 0)
 c = c % 10;
 _putchar('0' + c);
 }
-else if (c == 0)
+if (c == 0)
 {
 _putchar('0' + c);
 }
