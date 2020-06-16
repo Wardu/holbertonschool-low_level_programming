@@ -31,7 +31,7 @@ _putchar(i);
 i++;
 }
 i = 'a';
-_puthcar('\n');
+_putchar('\n');
 n++;
 }
 return (0);
