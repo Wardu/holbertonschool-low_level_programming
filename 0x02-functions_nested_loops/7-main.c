@@ -5,6 +5,7 @@
  * Description: output with return
  * Return: Always 0.
  */
+
 int main(void)
 {
 int r;
