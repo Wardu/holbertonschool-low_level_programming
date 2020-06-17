@@ -10,18 +10,18 @@
 
 int print_last_digit(int c)
 {
+int lst;
 
+lst = c % 10;
 
-if (c < 0)
+if (lst < 0)
 {
-c = -c;
-c = c % 10;
-_putchar('0' + c);
+lst = -lst;
+_putchar('0' + lst);
 }
 else
 {
-c = c % 10;
-_putchar('0' + c);
+_putchar('0' + lst);
 }
-return (c);
+return (lst);
 }
