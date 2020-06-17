@@ -9,7 +9,7 @@
 
 int main(void)
 {
-int num = 22, i, s = 1, f = 0, a = 0;
+int num = 98, i, s = 1, f = 0, a = 0;
 
 for (i = 1 ; i <= num ; i++)
 {
