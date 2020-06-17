@@ -9,13 +9,13 @@
 
 int main(void)
 {
-int num = 100, i, s = 0, f = 0, a = 1;
+int num = 100, i, s = 1, f = 0, a = 0;
 
 for (i = 1 ; i <= num ; i++)
 {
 f = a + s;
-s = a;
-a = f;
+a = s;
+s = f;
 printf("%i, ", f);
 }
 printf("\n");
