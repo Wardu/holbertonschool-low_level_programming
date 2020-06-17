@@ -8,41 +8,31 @@
 
 void times_table(void)
 {
-int a, b, ab, ab1, ab2;
+int column, row, sum, t;
 
-a = 0;
-while (a <= 9)
-{
-b = 0;
-while (b <= 9)
-{
-ab = a *b;
-ab1 = ab / 10;
-ab2 = ab % 10;
-if (b == 0)
+column = 0;
+while (column < 10)
 {
 _putchar('0');
-}
-else
-{
-if (ab1 == 0)
-{
-_putchar(' ');
-}
-else
-{
-_putchar(ab1 + '0');
-_putchar(ab2 + '0');
-}
-if (b < 9)
+row = 1;
+while (row < 10)
 {
 _putchar(',');
 _putchar(' ');
+sum = column *row, t = sum / 10;
+if (sum < 10)
+{
+_putchar(' ');
+_putchar(sum + '0');
 }
-b++;
+else
+{
+_putchar(t + '0');
+_putchar(sum % 10 + '0');
+}
+row++;
 }
 _putchar('\n');
-a++;
-}
+column++;
 }
 }
