@@ -28,8 +28,11 @@ int i = 1;
 		{
 			printf("%i", i);
 		}
-	printf(" ");
-	i++;
+		if (i != 100)
+		{
+			printf(" ");
+		}
+		i++;
 	}
 	printf("\n");
 	return (0);
