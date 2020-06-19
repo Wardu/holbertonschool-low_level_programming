@@ -7,7 +7,8 @@
 int main(void)
 {
 	int prime, fac_prime;
-	unsigned long i, j, n = 612852475143;
+	unsigned int i, j;
+	unsigned long n = 1231952;
 
 	for (i = 1 ; i <= n ; i++)
 	{
