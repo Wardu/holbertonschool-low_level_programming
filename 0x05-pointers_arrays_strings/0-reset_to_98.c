@@ -1,18 +1,13 @@
 #include "holberton.h"
 
 /**
- * print_numbers - prints the numbers, from 0 to 9, followed by a new line.
- * On error, -1 is returned, and errno is set appropriately.
- */
+	* reset_to_98 - updates the value it points to to 98.
+	* @n: a variable as referencia
+	* followed by a new line.
+				* Return: none.
+	*/
 
-void print_numbers(void)
+void reset_to_98(int *n)
 {
-int i = '0';
-
-while (i <= '9')
-{
-_putchar(i);
-i++;
-}
-_putchar('\n');
+				*n = 98;
 }
