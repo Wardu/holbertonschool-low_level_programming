@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-	* swap_int - updates the value it points to to 98.
+	* _strlen - updates the value it points to to 98.
 	* @s: a variable as referencia
 	* followed by a new line.
 	* Return: none.
