@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * _strcmp - copies a string
- * @s1: source to copy string to
-	* @s2: source to copy string to
+ * reverse_array - copies a string
+ * @a: source to copy string to
+	* @n: source to copy string to
  *
  * Return: copied string
  */
